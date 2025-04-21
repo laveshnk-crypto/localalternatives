@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Baskerville Old Face';
+  src: url('/local-alternatives/public/fonts/BaskervilleOldFace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes marquee {
+  0% {transform: translateX(100%);}
+  100% {transform: translateX(-100%);}
+}
+
+@keyframes fade-in {
+  0% {opacity: 0; scale:1.5;}
+  100% {opacity: 100; scale:1;}
+}
+
+.fade-in {
+  animation: fade-in 1s;
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+}
+
+.font-baskerville {
+  font-family: 'Baskerville Old Face', serif;
+}
+
